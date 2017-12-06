@@ -53,6 +53,68 @@ on getWinnerDesc(info)
 	return ans
 end getWinnerDesc
 
+on createTitleAndSubtitleSlide(thisDocument, title, subtitle)
+	tell application "Keynote"
+		activate
+		tell thisDocument
+			set thisSlide to ¬
+				make new slide with properties {base slide:master slide "Title & Subtitle"}
+			tell thisSlide
+				set the object text of the default title item to title
+				set the object text of the default body item to subtitle
+			end tell
+		end tell
+	end tell	
+end createTitleAndSubtitleSlide
+
+on createTitleAndBulletsSlide(thisDocument, title, body)
+	tell application "Keynote"
+		activate
+		tell thisDocument
+			set thisSlide to ¬
+				make new slide with properties {base slide:master slide "Title & Bullets"}
+			tell thisSlide
+				set the object text of the default title item to title
+				set the object text of the default body item to body
+			end tell
+		end tell
+	end tell	
+end createTitleAndBulletsSlide
+
+on createSlidesOfCategory(thisDocument, curCat, winnersList)
+	tell application "Keynote"
+		activate
+		tell thisDocument
+			set winnersCount to length of winnersList
+			set idx to 1
+			set curMedal to ""
+			set curMedalLabel to ""
+			set curCatLabel to "MODALIDADE " & curCat
+			set thisSlide to ¬
+				make new slide with properties {base slide:master slide "Title - Center"}
+			tell thisSlide
+				set the object text of the default title item to curCatLabel
+			end tell
+			repeat while idx <= winnersCount
+				set newMedal to (item 1 of (item idx of winnersList))
+				if not newMedal = curMedal
+					set curMedal to newMedal
+					set curMedalLabel to "MEDALHA DE " & curMedal
+					my createTitleAndSubtitleSlide(thisDocument, curMedalLabel, curCatLabel)
+				end if
+				set title to (curMedalLabel & "\n" & curCatLabel)
+				set body to my getWinnerDesc(item idx of winnersList)
+				if idx < winnersCount and (item 1 of (item (idx+1) of winnersList)) = curMedal
+					set body to (body & "\n" & my getWinnerDesc(item (idx+1) of winnersList)) -- TODO fix spaces
+					set idx to (idx+1)
+				end if
+				my createTitleAndBulletsSlide(thisDocument, title, body)
+				set idx to (idx + 1)
+			end repeat
+		end tell
+	end tell	
+end createSlidesOfCategory
+
 tell application "Keynote"
 	activate
 	set thisDocument to ¬
@@ -67,55 +129,15 @@ tell application "Keynote"
 
 		-- ic members
 		repeat with icMember in kIcMembers
-			set thisSlide to ¬
-				make new slide with properties {base slide:master slide "Title & Subtitle"}
-			tell thisSlide
-				set the object text of the default title item to item 1 of icMember
-				set the object text of the default body item to item 2 of icMember
-			end tell
+			my createTitleAndSubtitleSlide(thisDocument, item 1 of icMember, item 2 of icMember)
 		end repeat
 
-
-		-- TODO find out how to create functions that know the current context
-
-		set curCat to "INICIAÇÃO NÍVEL 1"
-		set winnersList to my getRevWinnersList("migue")
-
-		set winnersCount to length of winnersList
-		set idx to 1
-
-		set curMedalLabel to ""
-		set curCatLabel to "MODALIDADE " & curCat
-		set thisSlide to ¬
-			make new slide with properties {base slide:master slide "Title - Center"}
-		tell thisSlide
-			set the object text of the default title item to "MODALIDADE " & curCat
-		end tell
-		repeat while idx <= winnersCount
-			if idx = 1 or not (item 1 of (item idx of winnersList)) = (item 1 of (item (idx-1) of winnersList))
-				set thisSlide to ¬
-					make new slide with properties {base slide:master slide "Title & Subtitle"}
-				tell thisSlide
-					set curMedal to "MEDALHA DE " & (item 1 of (item idx of winnersList))
-					set the object text of the default title item to curMedal
-					set the object text of the default body item to curCatLabel
-				end tell
-			end if
-			set thisSlide to ¬
-				make new slide with properties {base slide:master slide "Title & Bullets"}
-			tell thisSlide
-				set the object text of the default title item to (curMedal & "\n" & curCatLabel)
-				set body to my getWinnerDesc(item idx of winnersList)
-				if idx < winnersCount
-					set body to (body & "\n" & my getWinnerDesc(item (idx+1) of winnersList)) -- TODO fix spaces
-				end if
-				set the object text of the default body item to body
-			end tell
-			set idx to (idx + 2)
+		-- medals
+		repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "ini1"}, {"INICIAÇÃO NÍVEL 2", "ini2"}}
+			set cat to (item 1 of catEntry)
+			set winnersList to my getRevWinnersList(item 2 of catEntry)
+			my createSlidesOfCategory(thisDocument, cat, winnersList)
 		end repeat
-
-
-
 
 	end tell
 end tell
