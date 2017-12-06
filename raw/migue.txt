@@ -1,0 +1,12 @@
+	1	10125	Ivan de Avila Ribeiro Carvalho	Colégio Etapa Valinhos	Valinhos	SP
+	2	9991	Joao Guilherme Madeira Araujo	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+	2	9991	Marcos Felipe Belisário Costa	Algar Telecom - Ufu	Uberlândia	MG
+
+	5	9775	Gabriel Silva Simões	Colégio Etapa	São Paulo	SP
+	6	9366	Carlos Eduardo de Santana Bastos	Instituto Federal do Piauí - Campus São Raimundo Nonato	São Raimundo Nonato	PI
+
+	13	7475	Tiago Domingos Almeida Souza	Universidade Federal da Bahia	Salvador	BA
+	14	7412	Pedro Souto Martins	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+
+HM	23	5558	Larissa Lopes Pessoa	Algar Telecom - Ufu	Uberlândia	MG
+HM	24	5483	Gustavo Vilar de Farias	Universidade Federal de Campina Grande	Campina Grande	PB

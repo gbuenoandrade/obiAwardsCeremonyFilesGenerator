@@ -1,0 +1,30 @@
+	1	10500	Thiago Mota Martins	Farias Brito Pré Vestibular Central	Fortaleza	CE
+	2	10250	Willian Wang	Colégio Etapa	São Paulo	SP
+
+	3	9600	Eduardo Quirino de Oliveira	Colégio Pódion	Brasília	DF
+	3	9600	Pedro Gomes Cabral	Colégio 17 de Agosto	Recife	PE
+
+	5	8850	Guilherme Alfaia Caetano	Farias Brito Pré Vestibular Central	Fortaleza	CE
+	6	8433	Igor Brito Andrade	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+	7	8208	Antonio Italo Lima Lopes	Farias Brito Pré Vestibular Central	Fortaleza	CE
+	8	8016	Ygor de Santana Moura	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+	9	7958	Rembrandt Asafe Vasconcelos Costa	Universidade Federal de Campina Grande	Campina Grande	PB
+	10	7641	João Lucas Farias Vasconcelos	Colégio Farias Brito Sobralense	Sobral	CE
+	11	7541	Lucas Padovan	Colégio Cidade de Bragança	Bragança Paulista	SP
+
+HM	12	7391	Guilherme Rodrigues Tafelli da Silva	Algar Telecom - Ufu	Uberlândia	MG
+HM	13	6891	Daví Henrique Silva Guimarães	Centro Campinense de Educação Ltda Colégio Motiva	Campina Grande	PB
+HM	14	6791	Samyra Vitoria Lima de Almeida	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+HM	15	6704	Francisco Moreira Machado Neto	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+HM	15	6704	Victor Ribeiro Alves	Centro Federal de Ed. Tecnológica Celso Suckow da Fonseca	Rio de Janeiro	RJ
+HM	17	6516	António Luís Alves Azevedo	Sistema Elite de Ensino - Unidade Madureira	Rio de Janeiro	RJ
+HM	17	6516	Bruno Berganholi Dias	Supergeeks Belo Horizonte	Belo Horizonte	MG
+HM	19	6464	Felipe Paiva Alencar	Colégio Santa Cecília	Fortaleza	CE
+HM	20	6041	Paulo José Cardoso Racy Ferreira	Colégio Etapa	São Paulo	SP
+HM	21	5916	João Marcos Cardoso da Silva	Colégio água Viva	Marília	SP
+HM	22	5766	Gabriel Pastori Figueira	Universidade Tecnológica Federal do Paraná - Campo Mourão	Campo Mourão	PR
+HM	23	5666	Gabriela Yuri Ishikawa	Colégio Etapa	São Paulo	SP
+HM	23	5666	Leonardo Gurgel Carlos Pires Filho	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+HM	25	5402	Augusto Nunes Zacarias	Colegio Geo João Pessoa	João Pessoa	PB
+HM	26	5308	Eduardo Amaral	Cefet-mg Campus Divinópolis	Divinópolis	MG
+HM	27	5208	João Vitor Teixeira Degelo	Colégio Etapa Valinhos	Valinhos	SP

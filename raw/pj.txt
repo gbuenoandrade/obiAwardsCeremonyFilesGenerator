@@ -1,0 +1,39 @@
+	1	10500	Lúcio Cardoso Dias Figueiredo Filho	Instituto Federal do Piauí - Campus São Raimundo Nonato	São Raimundo Nonato	PI
+
+	2	9250	Arthur Queiroz Moura	Instituto Dom Barreto	Teresina	PI
+	3	8500	Arthur Mendes Pereira	Farias Brito Pré Vestibular Central	Fortaleza	CE
+	4	8000	Brunno Rezende dos Santos	Colégio Militar de Belo Horizonte	Belo Horizonte	MG
+	4	8000	Carolina Moura Valle Costa	Colégio Cidade de Itu Anglo	Itu	SP
+	4	8000	Guilherme Ferreira Gomes	Escola de Ensino Fundamental Dona Filomena Martins	São Gonçalo do Amarante	CE
+	4	8000	Marcelo Montandon Magalhães	Colégio Etapa	São Paulo	SP
+
+	8	7500	Leonardo de Andrade Paes	Colégio Odilon Braveza	Fortaleza	CE
+	9	6979	Nicolas Goulart de Moura	Colégio Objetivo Paulista	São Paulo	SP
+	9	6979	Victor Lucas Rosada Canesin	Colégio Nossa Senhora de Fátima - Sacramentinas	Vitória da Conquista	BA
+	11	6333	André Luiz Buzacarini Schulman	Comphaus	São Paulo	SP
+	12	6000	Kenzo Yves Yamashita Nobre	Colégio Etapa	São Paulo	SP
+	12	6000	Luis Felipe de Almeida	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+
+HM	14	5500	Brenda Micaelle Santos Figueiredo	Coesi	Aracaju	SE
+HM	14	5500	Enzo Vídero Pinheiro Bahia	Coesi	Aracaju	SE
+HM	14	5500	Lauane Mateus Oliveira de Moraes	Instituto de Informática - Universidade Federal de Goiás	Goiânia	GO
+HM	14	5500	Lucas Takayasu	Colégio Objetivo Luís Goes	São Paulo	SP
+HM	14	5500	Marco Aurelio Brito Gaspar Filho	Colégio Antares - Praia de Irecema	Fortaleza	CE
+HM	14	5500	Matheus Vital Bertollo	Unip - Universidade Paulista	São Paulo	SP
+HM	14	5500	Pedro Henrique de Oliveira Roquette	Colégio Militar de Belo Horizonte	Belo Horizonte	MG
+HM	21	4666	Caue Singo Aramaki	Colégio Objetivo Paulista	São Paulo	SP
+HM	22	4541	Fernanda Ho Seixas dos Santos	Colégio Objetivo Teodoro	São Paulo	SP
+HM	23	4479	Enzo Grecchi	Supergeeks Sorocaba	Sorocaba	SP
+HM	23	4479	Filipi Enzo Siqueira Kikuchi	Colégio Objetivo Luís Goes	São Paulo	SP
+HM	23	4479	Matheus Kawamoto Paulo	Colégio Objetivo Cantareira	São Paulo	SP
+HM	23	4479	Paulo Henrique Tonello Andreata	Colégio água Viva	Marília	SP
+HM	23	4479	Pedro Luiz Flud Musso	Colégio Objetivo Cantareira	São Paulo	SP
+HM	28	4416	Pedro Gomes Cabral	Colégio Odilon Braveza	Fortaleza	CE
+HM	29	4145	Aluisio Amorim Cruz	Colégio Objetivo Luís Goes	São Paulo	SP
+HM	30	4000	Gustavo Oliveira Nunes	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
+HM	31	3833	Ana Bruna Salles Fonseca	Colégio Objetivo Teodoro	São Paulo	SP
+HM	31	3833	Heitor Massaru Hirano	Colégio Objetivo Teodoro	São Paulo	SP
+HM	31	3833	Larissa Neto Otsuka	Supergeeks - São José dos Campos	São José dos Campos	SP
+HM	31	3833	Marcelo Tamay Honda	Colégio Etapa	São Paulo	SP
+HM	31	3833	Marco Polo Levorin Filho	Colégio Etapa	São Paulo	SP
+HM	31	3833	Murilo Dertadian Rocha Prado	Colégio Etapa	São Paulo	SP
