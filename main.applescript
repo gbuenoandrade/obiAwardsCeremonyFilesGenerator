@@ -8,14 +8,10 @@ set kIcMembers to {{"Prof. Dr. Rodolfo Jardim de Azevedo", "Diretor do Instituto
 on getTokens(txt, delimiter)
 	set ans to {}
 	set cur to ""
-	set tokenNum to 0
 	repeat with c in txt
 		if c as string = delimiter
 			if length of cur is greater than 0 and not (cur = "HM")
-				set tokenNum to tokenNum + 1
-				if not tokenNum = 2
-					copy cur to the end of ans
-				end if
+				copy cur to the end of ans
 			end if
 			set cur to ""
 		else
@@ -37,7 +33,8 @@ on getRevWinnersList(category)
 	repeat with nextLine in txt
 		if length of nextLine is greater than 0 then
 			set tokens to {item (curMedalIdx+1) of kMedals} & getTokens(nextLine, "\t")
-			set ans to ans & {tokens}
+			set tokensProp to {medal:(item 1 of tokens), stageGroup:(item 2 of tokens), rank:(item 3 of tokens), name:(item 5 of tokens), school:(item 6 of tokens), city:(item 7 of tokens), state:(item 8 of tokens)}
+			set ans to ans & {tokensProp}
 		else
 			set curMedalIdx to (curMedalIdx + 1) mod 4
 		end if
@@ -76,9 +73,9 @@ on getListFromFile(listName, maxPerString)
 end getListFromFile
 
 on getWinnerDesc(info)
-	set ans to (item 3 of info)
-	set ans to ans & ("\n" & (item 4 of info) & " - " & (item 5 of info) & "/" & (item 6 of info))
-	set ans to ans & ("\n(" & (item 2 of info) & "º Lugar)")
+	set ans to (name of info)
+	set ans to ans & ("\n" & (school of info) & " - " & (city of info) & "/" & (state of info))
+	set ans to ans & ("\n(" & (rank of info) & "º Lugar)")
 	return ans
 end getWinnerDesc
 
@@ -102,6 +99,16 @@ on createTitleAndSubtitleSlide(thisDocument, title, subtitle, transition)
 	end tell	
 end createTitleAndSubtitleSlide
 
+on numOccurences(textVal, charVal)
+	set ans to 0
+	repeat with c in textVal
+		if (c as string) = charVal
+			set ans to (ans + 1)
+		end if
+	end repeat
+	return ans
+end numOccurences
+
 on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition, bodySize)
 	tell application "Keynote"
 		activate
@@ -123,7 +130,10 @@ on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition
 							set the size of character i of object text to (item (szIdx+1) of sizes)
 						end repeat
 					end tell
+
 					set sizes to {30, 21, 22}
+					if my numOccurences(body, "\n") > 8 then set sizes to {17, 14, 15} -- TODO make this more generic
+
 					set fontNames to {"Palatino", "Palatino Italic", "Palatino Italic"}
 					set szIdx to 2
 					tell the default body item
@@ -184,7 +194,7 @@ on createSlidesOfCategory(thisDocument, curCat, winnersList)
 			set curCatLabel to "MODALIDADE " & curCat
 			my createTitleCenterSlide(thisDocument, curCatLabel, swoosh)
 			repeat while idx <= winnersCount
-				set newMedal to (item 1 of (item idx of winnersList))
+				set newMedal to (medal of (item idx of winnersList))
 				if not newMedal = curMedal
 					set curMedal to newMedal
 					if curMedal = "HONRA AO MÉRITO"
@@ -195,13 +205,14 @@ on createSlidesOfCategory(thisDocument, curCat, winnersList)
 					my createTitleAndSubtitleSlide(thisDocument, curMedalLabel, curCatLabel, cube)
 				end if
 				set title to (curMedalLabel & "\n" & curCatLabel)
-				set body to my getWinnerDesc(item idx of winnersList)
-				if idx < winnersCount and (item 1 of (item (idx+1) of winnersList)) = curMedal
-					set body to (body & "\n\n" & my getWinnerDesc(item (idx+1) of winnersList))
-					set idx to (idx+1)
-				end if
+				set curGroup to (stageGroup of ((item idx) of winnersList))
+				set body to ""
+				repeat while idx <= winnersCount and (stageGroup of ((item idx) of winnersList)) = curGroup
+					if length of body > 0 then set body to (body & "\n\n")
+					set body to (body & my getWinnerDesc(item idx of winnersList))
+					set idx to idx+1
+				end repeat
 				my createTitleAndBulletsSlide(thisDocument, title, body, true, reveal, 0)
-				set idx to (idx + 1)
 			end repeat
 			my createBlankSlide(thisDocument)
 		end tell
@@ -231,7 +242,8 @@ tell application "Keynote"
 
 		-- medals
 		-- repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "ini1"}, {"INICIAÇÃO NÍVEL 2", "ini2"}, {"PROGRAMAÇÃO JÚNIOR", "pj"}}
-		repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "migueini1"}, {"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
+		-- repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "migueini1"}, {"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
+		repeat with catEntry in {{"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
 			set cat to (item 1 of catEntry)
 			set winnersList to my getRevWinnersList(item 2 of catEntry)
 			my createSlidesOfCategory(thisDocument, cat, winnersList)
