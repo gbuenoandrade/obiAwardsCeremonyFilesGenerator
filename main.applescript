@@ -82,7 +82,7 @@ on getWinnerDesc(info)
 	return ans
 end getWinnerDesc
 
-on createTitleAndSubtitleSlide(thisDocument, title, subtitle)
+on createTitleAndSubtitleSlide(thisDocument, title, subtitle, transition)
 	tell application "Keynote"
 		activate
 		tell thisDocument
@@ -91,6 +91,9 @@ on createTitleAndSubtitleSlide(thisDocument, title, subtitle)
 			tell thisSlide
 				set the object text of the default title item to title
 				set the object text of the default body item to subtitle
+				if not transition = null
+					set the transition properties to {transition effect:transition, transition duration:1.0, transition delay:0.0, automatic transition:false}			
+				end if
 				-- TODO
 				-- set the height of the default title item to ((height of the thisDocument) * 0.45)
 				-- set the height of the default body item to ((height of the thisDocument) * 0.45)
@@ -99,7 +102,7 @@ on createTitleAndSubtitleSlide(thisDocument, title, subtitle)
 	end tell	
 end createTitleAndSubtitleSlide
 
-on createTitleAndBulletsSlide(thisDocument, title, body)
+on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition, bodySize)
 	tell application "Keynote"
 		activate
 		tell thisDocument
@@ -108,12 +111,43 @@ on createTitleAndBulletsSlide(thisDocument, title, body)
 			tell thisSlide
 				set the object text of the default title item to title
 				set the object text of the default body item to body
+
+				if winnersBody = true
+					set sizes to {44, 31}
+					set szIdx to 1
+					tell the default title item
+						repeat with i from 1 to the length of title
+							if i=1 or (not ((item i of title) as string = "\n") and ((item (i-1) of title) as string = "\n"))
+								set szIdx to (szIdx+1) mod 2
+							end if
+							set the size of character i of object text to (item (szIdx+1) of sizes)
+						end repeat
+					end tell
+					set sizes to {30, 21, 22}
+					set fontNames to {"Palatino", "Palatino Italic", "Palatino Italic"}
+					set szIdx to 2
+					tell the default body item
+						repeat with i from 1 to the length of body
+							if i=1 or (not ((item i of body) as string = "\n") and ((item (i-1) of body) as string = "\n"))
+								set szIdx to (szIdx+1) mod 3
+							end if
+							set the size of character i of object text to (item (szIdx+1) of sizes)
+							set the font of character i of object text to (item (szIdx+1) of fontNames)
+						end repeat
+					end tell
+				else
+					set the size of the object text of the default body item to bodySize
+				end if
+
+				if not transition = null
+					set the transition properties to {transition effect:transition, transition duration:1.0, transition delay:0.0, automatic transition:false}
+				end if
 			end tell
 		end tell
 	end tell	
 end createTitleAndBulletsSlide
 
-on createTitleCenterSlide(thisDocument, title)
+on createTitleCenterSlide(thisDocument, title, transition)
 	tell application "Keynote"
 		activate
 		tell thisDocument
@@ -121,6 +155,9 @@ on createTitleCenterSlide(thisDocument, title)
 				make new slide with properties {base slide:master slide "Title - Center"}
 			tell thisSlide
 				set the object text of the default title item to title
+				if not transition = null
+					set the transition properties to {transition effect:transition, transition duration:1.0, transition delay:0.0, automatic transition:false}
+				end if
 			end tell
 		end tell
 	end tell	
@@ -145,7 +182,7 @@ on createSlidesOfCategory(thisDocument, curCat, winnersList)
 			set curMedal to ""
 			set curMedalLabel to ""
 			set curCatLabel to "MODALIDADE " & curCat
-			my createTitleCenterSlide(thisDocument, curCatLabel)
+			my createTitleCenterSlide(thisDocument, curCatLabel, swoosh)
 			repeat while idx <= winnersCount
 				set newMedal to (item 1 of (item idx of winnersList))
 				if not newMedal = curMedal
@@ -155,17 +192,18 @@ on createSlidesOfCategory(thisDocument, curCat, winnersList)
 					else
 						set curMedalLabel to "MEDALHA DE " & curMedal
 					end if
-					my createTitleAndSubtitleSlide(thisDocument, curMedalLabel, curCatLabel)
+					my createTitleAndSubtitleSlide(thisDocument, curMedalLabel, curCatLabel, cube)
 				end if
 				set title to (curMedalLabel & "\n" & curCatLabel)
 				set body to my getWinnerDesc(item idx of winnersList)
 				if idx < winnersCount and (item 1 of (item (idx+1) of winnersList)) = curMedal
-					set body to (body & "\n" & my getWinnerDesc(item (idx+1) of winnersList)) -- TODO fix spaces
+					set body to (body & "\n\n" & my getWinnerDesc(item (idx+1) of winnersList))
 					set idx to (idx+1)
 				end if
-				my createTitleAndBulletsSlide(thisDocument, title, body)
+				my createTitleAndBulletsSlide(thisDocument, title, body, true, reveal, 0)
 				set idx to (idx + 1)
 			end repeat
+			my createBlankSlide(thisDocument)
 		end tell
 	end tell	
 end createSlidesOfCategory
@@ -183,33 +221,34 @@ tell application "Keynote"
 			set the size of the object text of the default body item to 50
 			set the font of the object text of the default body item to "Copperplate"
 			set the color of the object text of the default body item to "black"
+			set the transition properties to {transition effect:doorway, transition duration:1.0, transition delay:0.0, automatic transition:false}			
 		end tell
 
 		-- ic members
 		repeat with icMember in kIcMembers
-			my createTitleAndSubtitleSlide(thisDocument, item 1 of icMember, item 2 of icMember)
+			my createTitleAndSubtitleSlide(thisDocument, item 1 of icMember, item 2 of icMember, null)
 		end repeat
 
 		-- medals
 		-- repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "ini1"}, {"INICIAÇÃO NÍVEL 2", "ini2"}, {"PROGRAMAÇÃO JÚNIOR", "pj"}}
-		repeat with catEntry in {{"PROGRAMAÇÃO JÚNIOR", "migue"}}
+		repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "migueini1"}, {"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
 			set cat to (item 1 of catEntry)
 			set winnersList to my getRevWinnersList(item 2 of catEntry)
 			my createSlidesOfCategory(thisDocument, cat, winnersList)
 		end repeat
 
 		--ioi
-		my createTitleCenterSlide(thisDocument, "RESULTADOS DA SELETIVA IOI")
-		my createTitleAndBulletsSlide(thisDocument, "Classificados\nSeletiva IOI", item 1 of my getListFromFile("ioi", 4))
+		my createTitleCenterSlide(thisDocument, "RESULTADOS DA SELETIVA IOI", cube)
+		my createTitleAndBulletsSlide(thisDocument, "Classificados\nSeletiva IOI", item 1 of my getListFromFile("ioi", 4), false, reveal, 30)
 
 		-- professors
 		repeat with entry in my getListFromFile("professors", 5)
-			my createTitleAndBulletsSlide(thisDocument, "Agradecimentos - Professores", entry)
+			my createTitleAndBulletsSlide(thisDocument, "Agradecimentos - Professores", entry, false, mosaic, 20)
 		end repeat
 
 		-- assistants
-		repeat with entry in my getListFromFile("assistants", 5)
-			my createTitleAndBulletsSlide(thisDocument, "Agradecimentos - Monitores", entry)
+		repeat with entry in my getListFromFile("assistants", 6)
+			my createTitleAndBulletsSlide(thisDocument, "Agradecimentos - Monitores", entry, false, reflection, 20)
 		end repeat
 
 		my createBlankSlide(thisDocument)

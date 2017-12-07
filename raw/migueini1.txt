@@ -1,0 +1,5 @@
+1	9154	Júlia Viana de Castro	Colégio Militar de Fortaleza	Fortaleza	CE
+2	9029	Davi Bruno Azevedo	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+3	9000	Joel Gontijo Mazoni	Colégio Magnum	Belo Horizonte	MG
+3	9000	Maria Elaine de Holanda Cavalcante	Colégio Farias Brito Central	Fortaleza	CE
+5	8554	Luis Miguel Nunes Matos	Colégio Santa Cecília	Fortaleza	CE
