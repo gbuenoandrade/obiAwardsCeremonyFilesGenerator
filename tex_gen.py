@@ -12,6 +12,7 @@ kIntrod = """
 \setlength{\parindent}{0pt}
 
 Faremos neste momento a chamada para a premiação dos alunos, que deverão apresentar-se à frente do palco, para receberem suas medalhas e certificados a serem entregues pelos componentes da mesa.\\\\
+\\textit{(Cada seção definida por um bullet point representa um conjunto de alunos que será chamado simultaneamente ao palco)}\\\\
 """
 
 kPresSentences = {	'ini1': u'Iniciaremos a premiação com a Modalidade Iniciação Nível 1, para alunos até o sétimo ano (sexta série) do Ensino Fundamental',

@@ -1,0 +1,21 @@
+1	1	10125	Ivan de Avila Ribeiro Carvalho	Colégio Etapa Valinhos	Valinhos	SP
+2	2	9991	Joao Guilherme Madeira Araujo	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+2	2	9991	Marcos Felipe Belisário Costa	Algar Telecom - Ufu	Uberlândia	MG
+2	4	9958	Frederico Bulhoes de Sousa Ribeiro	Farias Brito Pré Vestibular Central	Fortaleza	CE
+
+3	5	9775	Gabriel Silva Simões	Colégio Etapa	São Paulo	SP
+3	7	9300	Pedro Lucas Lanaro Sponchiado	Colégio Etapa	São Paulo	SP
+4	8	8825	Lucas Castro de Souza	Fundação Matias Machline	Manaus	AM
+4	9	8758	Beatriz Cunha Freire	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+
+8	13	7475	Tiago Domingos Almeida Souza	Universidade Federal da Bahia	Salvador	BA
+8	14	7412	Pedro Souto Martins	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+8	15	7375	Thiago Sena de Queiroz	Farias Brito Pré Vestibular Central	Fortaleza	CE
+9	16	7145	Cainã Setti Galante	Colégio Etapa	São Paulo	SP
+10	17	6983	Lara Franciulli Teodoro de Souza	Colégio Etapa	São Paulo	SP
+10	18	6708	Yan Victor Souza Guimaraes	Farias Brito Pré Vestibular Central	Fortaleza	CE
+
+13	HM	23	5558	Larissa Lopes Pessoa	Algar Telecom - Ufu	Uberlândia	MG
+13	HM	24	5483	Gustavo Vilar de Farias	Universidade Federal de Campina Grande	Campina Grande	PB
+14	HM	25	5383	Arthur Sampaio de Siqueira	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+14	HM	26	5158	Andre Yuji Sakuma	Colégio Objetivo Paulista	São Paulo	SP
