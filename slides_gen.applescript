@@ -1,8 +1,7 @@
 #!/usr/bin/osascript
 
--- TODO
 set kYear to "2017"
-set kObiEdition to "XXVII"
+set kObiEdition to "XIX"
 set kIcMembers to {{"Prof. Dr. Rodolfo Jardim de Azevedo", "Diretor do Instituto de Computação da Unicamp "}, {"Prof. Dr. Ricardo de Oliveira Anido", "Professor do Instituto de  Computação da Unicamp\n\nCoordenador da OBI" & kYear}}
 
 on getTokens(txt, delimiter)
@@ -59,7 +58,7 @@ on getListFromFile(listName, maxPerString)
 				end if
 			end if
 			if length of cur > 0
-				set cur to (cur & "\n")
+				set cur to (cur & "\n\n")
 			end if
 			set cur to (cur & nextLine)
 			set curCount to (curCount + 1)
@@ -114,11 +113,11 @@ on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition
 		activate
 		tell thisDocument
 			set thisSlide to ¬
-				make new slide with properties {base slide:master slide "Title & Bullets"}
+				make new slide with properties {base slide:master slide "Title - Top"}
 			tell thisSlide
 				set the object text of the default title item to title
-				set the object text of the default body item to body
-
+				set bodyTextItem to ¬
+					make new text item with properties {object text:body}
 				if winnersBody = true
 					set sizes to {44, 31}
 					set szIdx to 1
@@ -136,7 +135,7 @@ on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition
 
 					set fontNames to {"Palatino", "Palatino Italic", "Palatino Italic"}
 					set szIdx to 2
-					tell the default body item
+					tell bodyTextItem
 						repeat with i from 1 to the length of body
 							if i=1 or (not ((item i of body) as string = "\n") and ((item (i-1) of body) as string = "\n"))
 								set szIdx to (szIdx+1) mod 3
@@ -146,7 +145,7 @@ on createTitleAndBulletsSlide(thisDocument, title, body, winnersBody, transition
 						end repeat
 					end tell
 				else
-					set the size of the object text of the default body item to bodySize
+					set the size of the object text of the bodyTextItem to bodySize
 				end if
 
 				if not transition = null
@@ -208,7 +207,7 @@ on createSlidesOfCategory(thisDocument, curCat, winnersList)
 				set curGroup to (stageGroup of ((item idx) of winnersList))
 				set body to ""
 				repeat while idx <= winnersCount and (stageGroup of ((item idx) of winnersList)) = curGroup
-					if length of body > 0 then set body to (body & "\n\n")
+					if length of body > 0 then set body to (body & "\n\n\n")
 					set body to (body & my getWinnerDesc(item idx of winnersList))
 					set idx to idx+1
 				end repeat
@@ -225,13 +224,14 @@ tell application "Keynote"
 		make new document with properties {document theme:theme "awards_template"}
 	tell thisDocument
 		-- cover
-		set the base slide of the first slide to master slide "Title & Bullets"
+		set the base slide of the first slide to master slide "Title - Top"
 		tell first slide
 			set the object text of the default title item to "OBI" & kYear
-			set the object text of the default body item to kObiEdition & " Olimpíada Brasileira de Informática"
-			set the size of the object text of the default body item to 50
-			set the font of the object text of the default body item to "Copperplate"
-			set the color of the object text of the default body item to "black"
+			set bodyTextItem to ¬
+				make new text item with properties {object text:kObiEdition & " Olimpíada Brasileira de Informática"}
+			set the size of the object text of bodyTextItem to 50
+			set the font of the object text of bodyTextItem to "Copperplate"
+			set the color of the object text of bodyTextItem to "black"
 			set the transition properties to {transition effect:doorway, transition duration:1.0, transition delay:0.0, automatic transition:false}			
 		end tell
 

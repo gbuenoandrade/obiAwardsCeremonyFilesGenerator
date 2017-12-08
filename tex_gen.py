@@ -27,7 +27,7 @@ kIntrod = """
 \\textbf{Mestre de Cerimônias (Bernardo Vecchia Stein):}\\\\
 Boa noite à todos!\\\\
 \\textbf{Sejam bem vindos à Cerimônia de Premiação da Décima Nona Olimpíada Brasileira de Informática.}\\\\
-\color{blue}Este evento é promovido pela Sociedade Brasileira de Computação e apoiado pelo CNPQ. Em sua 18ª edição, a OBI foi organizada pelo Instituto de Computação da Unicamp (IC) sob a Coordenação do Prof. Dr. Ricardo de Oliveira Anido.\\\\
+\color{blue}Este evento é promovido pela Sociedade Brasileira de Computação e apoiado pelo CNPQ. Em sua 19ª edição, a OBI foi organizada pelo Instituto de Computação da Unicamp (IC) sob a Coordenação do Prof. Dr. Ricardo de Oliveira Anido.\\\\
 \color{black}
 Convidamos para compor a mesa de honra desta Cerimônia as seguintes autoridades:
 \\begin{itemize}
