@@ -24,6 +24,13 @@ kCats = [('Iniciação Nível 1', 'ini1'), ('Iniciação Nível 2', 'ini2'), ('P
 
 kMedals = [u'Medalhas de Ouro', u'Medalhas de Prata', u'Medalhas de Bronze', u'Honra ao Mérito']
 
+kAssistProfsMessage = """
+Finalmente faremos um agradecimento especial aos professores e monitores que se dedicaram aos cursos e aos cuidados dos alunos.
+Nós os chamaremos agora para entrega dos certificados de monitoria e para que recebam os merecidos aplausos:\\\\
+
+Os Professores:
+"""
+
 def parseList(fileName):
 	medalsIdx = 0
 	ans = []
@@ -39,16 +46,12 @@ def parseList(fileName):
 				ans.append(entry)
 	return ans[::-1]
 
-
-# \begin{itemize}
-# \item \textbf{3º lugar}\\
-# 	\textbf{name} – college – city/state\\
-# 	\textbf{name} – college – city/state
-# \item \textbf{2º lugar}\\
-# 	\textbf{name} – college – city/state
-# \item \textbf{1º lugar}\\
-# 	\textbf{name} – college – city/state
-# \end{itemize}
+def parseRegList(fileName):
+	ans = []
+	with codecs.open("raw/%s.txt" % fileName, encoding='utf-8', mode='r') as f:
+		for line in f:
+			ans.append(line.rstrip())
+	return ans
 
 def genCatTex(cat, catId):
 	ans = u"""
@@ -87,12 +90,24 @@ def genCatTex(cat, catId):
 
 	return ans
 	
+def genListTex(fileName):
+	ans = '\n\\begin{itemize}\n'
+	l = parseRegList(fileName)
+	for entry in l:
+		ans += "\item %s\n" % entry
+	ans += '\\end{itemize}\n'
+	return ans
 
 def main():
 	ans = kIntrod
 	for cat, catId in kCats:
 		tex = genCatTex(cat, catId)
 		ans += tex
+
+	ans += kAssistProfsMessage
+	ans += genListTex('professors')
+	ans += "\nOs Monitores:\n"
+	ans += genListTex('assistants')
 	ans += '\end{document}'
 	print(ans)
 

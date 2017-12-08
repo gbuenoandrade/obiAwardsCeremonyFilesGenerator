@@ -1,10 +1,9 @@
-Arthur Pratti Dadalto, IC-UNICAMP
-Victor Colombo, IME-USP
-Marcos Kawakami, IME-USP
+Arthur Nascimento, USP
+Crishna Irion, UNA
 Dilson Almeida Guimarães, UFMG
-Ivan Henrique Costa Petrin, IC-UNICAMP
-Crishna Irion, INATEL
-Nara Bigolin, UFSM
-Flávia Pisani, IC-UNICAMP
-Lehilton Lelis Chaves Pedrosa, IC-UNICAMP
-Ricardo de Oliveira Anido, IC-UNICAMP
+Flávia Pisani, UNICAMP
+Gabriel Poesia, UFMG
+Ivan Henrique Costa Petrin, UNICAMP
+Ricardo Anido, UNICAMP
+Victor Sena Molero, USP
+Vinícius Fernandes dos Santos, UFMG
