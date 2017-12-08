@@ -242,8 +242,7 @@ tell application "Keynote"
 
 		-- medals
 		-- repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "ini1"}, {"INICIAÇÃO NÍVEL 2", "ini2"}, {"PROGRAMAÇÃO JÚNIOR", "pj"}}
-		-- repeat with catEntry in {{"INICIAÇÃO NÍVEL 1", "migueini1"}, {"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
-		repeat with catEntry in {{"PROGRAMAÇÃO NÍVEL 2", "miguep2"}}
+		repeat with catEntry in {{"PROGRAMAÇÃO NÍVEL 2", "testp2"}}
 			set cat to (item 1 of catEntry)
 			set winnersList to my getRevWinnersList(item 2 of catEntry)
 			my createSlidesOfCategory(thisDocument, cat, winnersList)

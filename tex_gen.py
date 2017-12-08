@@ -11,8 +11,41 @@ kIntrod = """
 \\begin{document}
 \setlength{\parindent}{0pt}
 
+\\begin{center}
+    \\textbf{
+        UNIVERSIDADE ESTADUAL DE CAMPINAS\\\\
+        CERIMONIAL\\\\
+        \\bigskip
+         PREMIAÇÃO DA OLIMPÍADA BRASILEIRA DE INFORMÁTICA\\\\
+        INSTITUTO DE COMPUTAÇÃO\\\\
+        DIA – 08 DE DEZEMBRO DE 2017\\\\
+        HORÁRIO: 19H00 ÀS 20H30\\\\
+        Hotel Dan Inn – CAMPINAS/SP 
+    }
+\end{center}
+
+\\textbf{Mestre de Cerimônias (Bernardo Vecchia Stein):}\\\\
+Boa noite à todos!\\\\
+\\textbf{Sejam bem vindos à Cerimônia de Premiação da Décima Nona Olimpíada Brasileira de Informática.}\\\\
+\color{blue}Este evento é promovido pela Sociedade Brasileira de Computação e apoiado pelo CNPQ. Em sua 18ª edição, a OBI foi organizada pelo Instituto de Computação da Unicamp (IC) sob a Coordenação do Prof. Dr. Ricardo de Oliveira Anido.\\\\
+\color{black}
+Convidamos para compor a mesa de honra desta Cerimônia as seguintes autoridades:
+\\begin{itemize}
+\item \\textbf{Prof. Dr. João Frederico da Costa Azevedo Meyer}\\\\
+Pró-reitor de Extensão e Assuntos Comunitários da Unicamp e Professor\\\\
+Titular do Instituto de Matemárica da Unicamp
+\item \\textbf{Prof. Dr. Rodolfo Jardim de Azevedo}\\\\
+Diretor do Instituto de Computação da Unicamp.
+\item \\textbf{Prof. Dr. Ricardo de Oliveira Anido}\\\\
+Professor do Instituto de Computação da Unicamp\\\\
+Coordenador da Olimpíada Brasileira de Informática 2017
+\end{itemize}
+
+Com a palavra o Prof. Dr. Ricardo de Oliveira Anido, professor do Instituto de Computação da Unicamp e Coordenador da OBI 2017.\\\\
+\color{red}\\textbf{(Breve discurso de abertura)}\color{black}\\\\
+
 Faremos neste momento a chamada para a premiação dos alunos, que deverão apresentar-se à frente do palco, para receberem suas medalhas e certificados a serem entregues pelos componentes da mesa.\\\\
-\\textit{(Cada seção definida por um bullet point representa um conjunto de alunos que será chamado simultaneamente ao palco)}\\\\
+\color{red}\\textbf{(Cada seção definida por um bullet point representa um conjunto de alunos que será chamado simultaneamente ao palco)}\color{black}\\\\
 """
 
 kPresSentences = {	'ini1': u'Iniciaremos a premiação com a Modalidade Iniciação Nível 1, para alunos até o sétimo ano (sexta série) do Ensino Fundamental',
@@ -26,10 +59,30 @@ kCats = [('Iniciação Nível 1', 'ini1'), ('Iniciação Nível 2', 'ini2'), ('P
 kMedals = [u'Medalhas de Ouro', u'Medalhas de Prata', u'Medalhas de Bronze', u'Honra ao Mérito']
 
 kAssistProfsMessage = """
-Finalmente faremos um agradecimento especial aos professores e monitores que se dedicaram aos cursos e aos cuidados dos alunos.
+Finalmente faremos um agradecimento especial aos professores e monitores que se dedicaram aos cursos e aos cuidados dos alunos.\\\\
 Nós os chamaremos agora para entrega dos certificados de monitoria e para que recebam os merecidos aplausos:\\\\
 
 Os Professores:
+"""
+
+kIOIResult = """
+Estes alunos participaram também da Seletiva para a Olimpíada Internacional de Informática de 2018, que acontecerá em Setembro, no Japão. Os alunos realizaram provas diárias e a última delas terminou há alguns minutos. Os alunos selecionados são, em ordem alfabética:\\\\
+\color{blue}\\textbf{Selecionados para Olimpiada Internacional de Informática}\color{black}
+"""
+
+kFinalSpeeches = """
+Neste momento convidamos para fazer uso da palavra:\\\\
+\color{red}\\textbf{(Tempo para discurso: até 3 minutos cada)}\color{black}\\
+\\begin{itemize}
+\\item Prof. Dr. Álvaro Penteado Crosta, Coordenador Geral da Unicamp
+\\item Prof. Dr. Ricardo da Silva Torres, Diretor do Instituto de Computação da Unicamp
+\\item Profa. Dra. Gláucia Maria Pastore, pró-reitora de pesquisa da Unicamp
+\\end{itemize}
+"""
+
+kFinalMessage = """
+Encerramos esta cerimônia, agradecendo a presença dos componentes da mesa de honra e da audiência.\\\\
+\\textbf{Parabenizamos mais uma vez a todos os participantes e premiados.}
 """
 
 def parseList(fileName):
@@ -72,7 +125,7 @@ def genCatTex(cat, catId):
 				ans += '\\end{itemize}\n'
 				shouldEnd = False
 			ans += u"""
-\\textbf{\color{blue}Ganhadores de %s, \color{black}%s}
+\\textbf{\color{blue}Ganhadores de %s, \color{black}Modalidade %s}
 \color{black}
 """ % (medal, cat)
 			ans += '\n\\begin{itemize}\n'
@@ -104,11 +157,18 @@ def main():
 	for cat, catId in kCats:
 		tex = genCatTex(cat, catId)
 		ans += tex
-
+	ans += "\\bigskip\n"
+	ans += kIOIResult
+	ans += genListTex('ioi')
+	ans += "\\bigskip\n"
+	ans += kFinalSpeeches
+	ans += "\\bigskip\n"
 	ans += kAssistProfsMessage
 	ans += genListTex('professors')
 	ans += "\nOs Monitores:\n"
 	ans += genListTex('assistants')
+	ans += "\\bigskip\n"
+	ans += kFinalMessage	
 	ans += '\end{document}'
 	print(ans)
 
