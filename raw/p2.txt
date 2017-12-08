@@ -10,26 +10,3 @@
 6	10	8700	Alan Hahn Pereira	Colégio Objetivo Granja Viana	Cotia	SP
 7	11	8033	Gustavo Farani de Farias	Colégio Amadeus	Aracaju	SE
 7	12	7858	Matheus Leal Viana	Farias Brito Pré Vestibular Central	Fortaleza	CE
-
-8	13	7475	Tiago Domingos Almeida Souza	Universidade Federal da Bahia	Salvador	BA
-8	14	7412	Pedro Souto Martins	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-9	15	7375	Thiago Sena de Queiroz	Farias Brito Pré Vestibular Central	Fortaleza	CE
-9	16	7145	Cainã Setti Galante	Colégio Etapa	São Paulo	SP
-10	17	6983	Lara Franciulli Teodoro de Souza	Colégio Etapa	São Paulo	SP
-10	18	6708	Yan Victor Souza Guimaraes	Farias Brito Pré Vestibular Central	Fortaleza	CE
-11	19	6408	Gabriel Pereira de Carvalho	Colégio Etapa Valinhos	Valinhos	SP
-11	20	5904	Daniel Yan	Colégio Etapa	São Paulo	SP
-12	21	5841	Leonardo Su	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-12	22	5741	Bruno Martins Bezerra Farias	Farias Brito Pré Vestibular Central	Fortaleza	CE
-
-13	HM	23	5558	Larissa Lopes Pessoa	Algar Telecom - Ufu	Uberlândia	MG
-13	HM	24	5483	Gustavo Vilar de Farias	Universidade Federal de Campina Grande	Campina Grande	PB
-14	HM	25	5383	Arthur Sampaio de Siqueira	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
-14	HM	26	5158	Andre Yuji Sakuma	Colégio Objetivo Paulista	São Paulo	SP
-15	HM	27	5058	Vinicius Brito de Oliveira	Farias Brito Pré Vestibular Central	Fortaleza	CE
-15	HM	28	4941	Walter Melhado Arbiol Forne	Colégio Objetivo Paulista	São Paulo	SP
-16	HM	29	4908	Felipe Pereira Franco	Fundação Matias Machline	Manaus	AM
-16	HM	30	4833	Bruno de Melo Costa	Farias Brito Pré Vestibular Central	Fortaleza	CE
-17	HM	31	4708	Djair Maykon de Novaes Miranda	Ifba - Campus Jequié	Jequié	BA
-17	HM	31	4708	Vinicius Rodrigues de Freitas	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
-18	HM	33	4681	Nicolas Caous Fernandes	Ifsp - Campus São Paulo	São Paulo	SP

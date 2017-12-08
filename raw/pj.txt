@@ -1,39 +1,14 @@
 1	1	10500	Lúcio Cardoso Dias Figueiredo Filho	Instituto Federal do Piauí - Campus São Raimundo Nonato	São Raimundo Nonato	PI
 
 2	2	9250	Arthur Queiroz Moura	Instituto Dom Barreto	Teresina	PI
-2	3	8500	Arthur Mendes Pereira	Farias Brito Pré Vestibular Central	Fortaleza	CE
+3	3	8500	Arthur Mendes Pereira	Farias Brito Pré Vestibular Central	Fortaleza	CE
 3	4	8000	Brunno Rezende dos Santos	Colégio Militar de Belo Horizonte	Belo Horizonte	MG
-3	4	8000	Carolina Moura Valle Costa	Colégio Cidade de Itu Anglo	Itu	SP
+4	4	8000	Carolina Moura Valle Costa	Colégio Cidade de Itu Anglo	Itu	SP
 4	4	8000	Guilherme Ferreira Gomes	Escola de Ensino Fundamental Dona Filomena Martins	São Gonçalo do Amarante	CE
-4	4	8000	Marcelo Montandon Magalhães	Colégio Etapa	São Paulo	SP
 
 5	8	7500	Leonardo de Andrade Paes	Colégio Odilon Braveza	Fortaleza	CE
 5	9	6979	Nicolas Goulart de Moura	Colégio Objetivo Paulista	São Paulo	SP
 6	9	6979	Victor Lucas Rosada Canesin	Colégio Nossa Senhora de Fátima - Sacramentinas	Vitória da Conquista	BA
-6	11	6333	André Luiz Buzacarini Schulman	Comphaus	São Paulo	SP
-7	12	6000	Kenzo Yves Yamashita Nobre	Colégio Etapa	São Paulo	SP
-7	12	6000	Luis Felipe de Almeida	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+6	12	6000	Luis Felipe de Almeida	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
 
-8	HM	14	5500	Brenda Micaelle Santos Figueiredo	Coesi	Aracaju	SE
-8	HM	14	5500	Enzo Vídero Pinheiro Bahia	Coesi	Aracaju	SE
-9	HM	14	5500	Lauane Mateus Oliveira de Moraes	Instituto de Informática - Universidade Federal de Goiás	Goiânia	GO
-9	HM	14	5500	Lucas Takayasu	Colégio Objetivo Luís Goes	São Paulo	SP
-10	HM	14	5500	Marco Aurelio Brito Gaspar Filho	Colégio Antares - Praia de Irecema	Fortaleza	CE
-10	HM	14	5500	Matheus Vital Bertollo	Unip - Universidade Paulista	São Paulo	SP
-11	HM	14	5500	Pedro Henrique de Oliveira Roquette	Colégio Militar de Belo Horizonte	Belo Horizonte	MG
-11	HM	21	4666	Caue Singo Aramaki	Colégio Objetivo Paulista	São Paulo	SP
-12	HM	22	4541	Fernanda Ho Seixas dos Santos	Colégio Objetivo Teodoro	São Paulo	SP
-12	HM	23	4479	Enzo Grecchi	Supergeeks Sorocaba	Sorocaba	SP
-13	HM	23	4479	Filipi Enzo Siqueira Kikuchi	Colégio Objetivo Luís Goes	São Paulo	SP
-13	HM	23	4479	Matheus Kawamoto Paulo	Colégio Objetivo Cantareira	São Paulo	SP
-14	HM	23	4479	Paulo Henrique Tonello Andreata	Colégio água Viva	Marília	SP
-14	HM	23	4479	Pedro Luiz Flud Musso	Colégio Objetivo Cantareira	São Paulo	SP
-15	HM	28	4416	Pedro Gomes Cabral	Colégio Odilon Braveza	Fortaleza	CE
-15	HM	29	4145	Aluisio Amorim Cruz	Colégio Objetivo Luís Goes	São Paulo	SP
-16	HM	30	4000	Gustavo Oliveira Nunes	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
-16	HM	31	3833	Ana Bruna Salles Fonseca	Colégio Objetivo Teodoro	São Paulo	SP
-17	HM	31	3833	Heitor Massaru Hirano	Colégio Objetivo Teodoro	São Paulo	SP
-17	HM	31	3833	Larissa Neto Otsuka	Supergeeks - São José dos Campos	São José dos Campos	SP
-18	HM	31	3833	Marcelo Tamay Honda	Colégio Etapa	São Paulo	SP
-18	HM	31	3833	Marco Polo Levorin Filho	Colégio Etapa	São Paulo	SP
-19	HM	31	3833	Murilo Dertadian Rocha Prado	Colégio Etapa	São Paulo	SP
+7	HM	14	5500	Lauane Mateus Oliveira de Moraes	Instituto de Informática - Universidade Federal de Goiás	Goiânia	GO

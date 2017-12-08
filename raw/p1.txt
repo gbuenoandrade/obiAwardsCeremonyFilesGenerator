@@ -1,30 +1,18 @@
 1	1	10500	Thiago Mota Martins	Farias Brito Pré Vestibular Central	Fortaleza	CE
-1	2	10250	Willian Wang	Colégio Etapa	São Paulo	SP
+2	2	10250	Willian Wang	Colégio Etapa	São Paulo	SP
 
-2	3	9600	Eduardo Quirino de Oliveira	Colégio Pódion	Brasília	DF
-2	3	9600	Pedro Gomes Cabral	Colégio 17 de Agosto	Recife	PE
+3	3	9600	Eduardo Quirino de Oliveira	Colégio Pódion	Brasília	DF
+3	3	9600	Pedro Gomes Cabral	Colégio 17 de Agosto	Recife	PE
 
-3	5	8850	Guilherme Alfaia Caetano	Farias Brito Pré Vestibular Central	Fortaleza	CE
-3	6	8433	Igor Brito Andrade	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-4	7	8208	Antonio Italo Lima Lopes	Farias Brito Pré Vestibular Central	Fortaleza	CE
-4	8	8016	Ygor de Santana Moura	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-5	9	7958	Rembrandt Asafe Vasconcelos Costa	Universidade Federal de Campina Grande	Campina Grande	PB
-5	10	7641	João Lucas Farias Vasconcelos	Colégio Farias Brito Sobralense	Sobral	CE
-6	11	7541	Lucas Padovan	Colégio Cidade de Bragança	Bragança Paulista	SP
+4	5	8850	Guilherme Alfaia Caetano	Farias Brito Pré Vestibular Central	Fortaleza	CE
+5	6	8433	Igor Brito Andrade	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+5	7	8208	Antonio Ítalo Lima Lopes	Farias Brito Pré Vestibular Central	Fortaleza	CE
+6	8	8016	Ygor de Santana Moura	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+6	9	7958	Rembrandt Asafe Vasconcelos Costa	Universidade Federal de Campina Grande	Campina Grande	PB
+7	10	7641	João Lucas Farias Vasconcelos	Colégio Farias Brito Sobralense	Sobral	CE
+7	11	7541	Lucas Padovan	Colégio Cidade de Bragança	Bragança Paulista	SP
 
-7	HM	12	7391	Guilherme Rodrigues Tafelli da Silva	Algar Telecom - Ufu	Uberlândia	MG
-7	HM	13	6891	Daví Henrique Silva Guimarães	Centro Campinense de Educação Ltda Colégio Motiva	Campina Grande	PB
-8	HM	14	6791	Samyra Vitoria Lima de Almeida	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
-8	HM	15	6704	Francisco Moreira Machado Neto	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-9	HM	15	6704	Victor Ribeiro Alves	Centro Federal de Ed. Tecnológica Celso Suckow da Fonseca	Rio de Janeiro	RJ
-9	HM	17	6516	António Luís Alves Azevedo	Sistema Elite de Ensino - Unidade Madureira	Rio de Janeiro	RJ
-10	HM	17	6516	Bruno Berganholi Dias	Supergeeks Belo Horizonte	Belo Horizonte	MG
-10	HM	19	6464	Felipe Paiva Alencar	Colégio Santa Cecília	Fortaleza	CE
-11	HM	20	6041	Paulo José Cardoso Racy Ferreira	Colégio Etapa	São Paulo	SP
-11	HM	21	5916	João Marcos Cardoso da Silva	Colégio água Viva	Marília	SP
-12	HM	22	5766	Gabriel Pastori Figueira	Universidade Tecnológica Federal do Paraná - Campo Mourão	Campo Mourão	PR
-12	HM	23	5666	Gabriela Yuri Ishikawa	Colégio Etapa	São Paulo	SP
-13	HM	23	5666	Leonardo Gurgel Carlos Pires Filho	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
-13	HM	25	5402	Augusto Nunes Zacarias	Colegio Geo João Pessoa	João Pessoa	PB
-14	HM	26	5308	Eduardo Amaral	Cefet-mg Campus Divinópolis	Divinópolis	MG
-14	HM	27	5208	João Vitor Teixeira Degelo	Colégio Etapa Valinhos	Valinhos	SP
+8	HM	12	7391	Guilherme Rodrigues Tafelli da Silva	Algar Telecom - Ufu	Uberlândia	MG
+8	HM	13	6891	Daví Henrique Silva Guimarães	Centro Campinense de Educação Ltda Colégio Motiva	Campina Grande	PB
+9	HM	14	6791	Samyra Vitoria Lima de Almeida	Colégio Farias Brito Pré- Vestibular Aldeota	Fortaleza	CE
+9	HM	15	6704	Francisco Moreira Machado Neto	Ari de Sá Cavalcante Aldeota	Fortaleza	CE

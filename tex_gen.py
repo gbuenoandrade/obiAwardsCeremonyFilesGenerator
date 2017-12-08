@@ -31,9 +31,13 @@ Boa noite à todos!\\\\
 \color{black}
 Convidamos para compor a mesa de honra desta Cerimônia as seguintes autoridades:
 \\begin{itemize}
-\item \\textbf{Prof. Dr. João Frederico da Costa Azevedo Meyer}\\\\
-Pró-reitor de Extensão e Assuntos Comunitários da Unicamp e Professor\\\\
-Titular do Instituto de Matemárica da Unicamp
+\item \\textbf{Prof. Dr. Munir Skaf}\\\\
+Pró-reitor de Pesquisa da Unicamp\\\\
+Professor Titular do Instituto de Química da Unicamp
+
+\item \\textbf{Prof. Dr. Marcelo Duduchi}\\\\
+Diretor da Sociedade Brasileira de Computação (SBC)
+
 \item \\textbf{Prof. Dr. Rodolfo Jardim de Azevedo}\\\\
 Diretor do Instituto de Computação da Unicamp.
 \item \\textbf{Prof. Dr. Ricardo de Oliveira Anido}\\\\
@@ -74,9 +78,10 @@ kFinalSpeeches = """
 Neste momento convidamos para fazer uso da palavra:\\\\
 \color{red}\\textbf{(Tempo para discurso: até 3 minutos cada)}\color{black}\\
 \\begin{itemize}
-\\item Prof. Dr. Álvaro Penteado Crosta, Coordenador Geral da Unicamp
-\\item Prof. Dr. Ricardo da Silva Torres, Diretor do Instituto de Computação da Unicamp
-\\item Profa. Dra. Gláucia Maria Pastore, pró-reitora de pesquisa da Unicamp
+\\item Prof. Dr. Munir Skaf, Pró-reitor de Pesquisa da Unicamp
+\\item Prof. Dr. Marcelo Duduchi, Diretor da Sociedade Brasileira de Computação (SBC)
+\\item Prof. Dr. Rodolfo Jardim de Azevedo, Diretor do Instituto de Computação da Unicamp
+\\item Prof. Dr. Ricardo de Oliveira Anido, Coordenador da OBI 2017
 \\end{itemize}
 """
 
