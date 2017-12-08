@@ -1,24 +1,24 @@
-1	9375	Gabriel Ribeiro Paiva	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-2	9341	Daniel Yuji Hosomi	Fipp/unoeste	Presidente Prudente	SP
-3	9312	Luis Augusto Oliveira Sa	Colegio Master	Fortaleza	CE
-4	9187	Felipe Vilela Valdivia	Colégio Etapa	São Paulo	SP
-5	9154	Othon Daiki Ishiyi	Fipp/unoeste	Presidente Prudente	SP
-6	9125	Giulia Queiroz Cavalcanti	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-7	9062	André Yugo Inoue	Colegio Visconde de Porto Seguro	São Paulo	SP
-8	9029	Matheus Paulo Ferreira	Colégio Objetivo Marquês	São Paulo	SP
-9	9000	Lucas Novais de Oliveira	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
-10	8966	Matheus Lima Reis	Colégio Farias Brito Sobralense	Sobral	CE
-11	8904	Pedro Lopes Carneiro Neto	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-12	8841	Marcela Lima Fernandes	Colegio Master	Fortaleza	CE
-12	8841	Tiago Ribeiro Paiva	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-14	8812	Renan Araujo Holanda	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
-15	8779	Pedro Henrique Moretti Pepato	Fipp/unoeste	Presidente Prudente	SP
-16	8750	Rafael Marques Quesada	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
-17	8745	Luiza Azevedo Silva	Centro Educacional Adalberto Valle - Unidade I	Manaus	AM
-18	8654	Alex Carneiro de Souza	Colégio Antares - Praia de Irecema	Fortaleza	CE
-19	8625	Filipe Augusto Oliveira	Ari de Sá Cavalcante - Sede Washington Soares	Fortaleza	CE
-19	8625	Lucas Santos Moraes	Colegio Militar do Rio de Janeiro	Rio de Janeiro	RJ
-19	8625	Matheus Nogueira dos Santos	Ari de Sá Cavalcante - Sede Washington Soares	Fortaleza	CE
-22	8620	João Gabriel de Oliveira Santos	Instituto Alpha Lumen	São José dos Campos	SP
-22	8620	Pedro Lucas Silverio Bezerra Santos	Colégio Contato Maceió	Maceió	AL
-24	8616	Lara França Raposo	Coc - Maceio	Maceió	AL
+1	1	9375	Gabriel Ribeiro Paiva	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+2	2	9341	Daniel Yuji Hosomi	Fipp/unoeste	Presidente Prudente	SP
+2	3	9312	Luis Augusto Oliveira Sa	Colegio Master	Fortaleza	CE
+3	4	9187	Felipe Vilela Valdivia	Colégio Etapa	São Paulo	SP
+3	5	9154	Othon Daiki Ishiyi	Fipp/unoeste	Presidente Prudente	SP
+4	6	9125	Giulia Queiroz Cavalcanti	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+4	7	9062	André Yugo Inoue	Colegio Visconde de Porto Seguro	São Paulo	SP
+5	8	9029	Matheus Paulo Ferreira	Colégio Objetivo Marquês	São Paulo	SP
+5	9	9000	Lucas Novais de Oliveira	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
+6	10	8966	Matheus Lima Reis	Colégio Farias Brito Sobralense	Sobral	CE
+6	11	8904	Pedro Lopes Carneiro Neto	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+7	12	8841	Marcela Lima Fernandes	Colegio Master	Fortaleza	CE
+7	12	8841	Tiago Ribeiro Paiva	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+8	14	8812	Renan Araujo Holanda	Ari de Sá Cavalcante Aldeota	Fortaleza	CE
+8	15	8779	Pedro Henrique Moretti Pepato	Fipp/unoeste	Presidente Prudente	SP
+9	16	8750	Rafael Marques Quesada	Colégio Objetivo Alphaville	Santana de Parnaíba	SP
+9	17	8745	Luiza Azevedo Silva	Centro Educacional Adalberto Valle - Unidade I	Manaus	AM
+10	18	8654	Alex Carneiro de Souza	Colégio Antares - Praia de Irecema	Fortaleza	CE
+10	19	8625	Filipe Augusto Oliveira	Ari de Sá Cavalcante - Sede Washington Soares	Fortaleza	CE
+11	19	8625	Lucas Santos Moraes	Colegio Militar do Rio de Janeiro	Rio de Janeiro	RJ
+11	19	8625	Matheus Nogueira dos Santos	Ari de Sá Cavalcante - Sede Washington Soares	Fortaleza	CE
+12	22	8620	João Gabriel de Oliveira Santos	Instituto Alpha Lumen	São José dos Campos	SP
+12	22	8620	Pedro Lucas Silverio Bezerra Santos	Colégio Contato Maceió	Maceió	AL
+13	24	8616	Lara França Raposo	Coc - Maceio	Maceió	AL
